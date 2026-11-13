@@ -2,16 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import "./recipes.css";
+import { type Recipes  } from "@/types/types";
 
-type Recipe = {
-    id: number;
-    name: string;
-    ingredients: string;
-    cuisine: string;
-    image: string;   
-};
-
-type Recipes = Recipe[];
 
 export default async function RecipesPage() {
 
