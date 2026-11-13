@@ -6,7 +6,7 @@ export default function Home () {
         <>
         <h1>Velkommen til Beste Oppskrifter!</h1>
         <p>Her finner du oppskrifter til forskjellige anledninger! </p>
-        <Link href="/recipes" className={styles.recipeButton}>Finn oppskrifter</Link>
+        <Link href="/recipes" className="recipeButton">Finn oppskrifter</Link>
         </> 
     )
 }

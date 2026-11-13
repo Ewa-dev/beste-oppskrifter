@@ -8,9 +8,10 @@ body {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
-  url("../public/carrot-background.jpg");
+  url("/carrot-background.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   min-height: 500px;
   margin: 0;  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,3 +45,21 @@ main {
 
   header { border-bottom: 1px solid lightgray; }
   footer { border-top: 1px solid lightgray; }
+
+  
+.recipeButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #e67e22;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-button:hover {
+  background-color: #ca6f1e;
+}
