@@ -1,0 +1,18 @@
+.recipe-article {
+  grid-row: span 4;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 0.125rem;
+  grid-template-rows: subgrid;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+img {
+  justify-self: center;
+  border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+.recipe-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px;
+  align-items: flex-start;
+}
+.recipe-box {
+  text-align: left;
+}
+
+.img-box img {
+  border-radius: 10px;
+  
+}
