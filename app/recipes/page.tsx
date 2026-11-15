@@ -11,7 +11,6 @@ const RECIPES_PER_PAGE = 12;
 const RECIPES_API = "https://dummyjson.com/recipes";
 
 export default async function RecipesPage({ searchParams }: Props) {
-
   const { page } = await searchParams;
 
   let pageNumber = 1;
@@ -29,7 +28,7 @@ export default async function RecipesPage({ searchParams }: Props) {
     throw new Error("Noe gikk galt!");
   }
 
-  const { recipes, total} = await response.json();
+  const { recipes, total } = await response.json();
 
   const totalPages = Math.ceil(total / RECIPES_PER_PAGE);
 
@@ -38,10 +37,7 @@ export default async function RecipesPage({ searchParams }: Props) {
   return (
     <>
       <RecipesComponent recipes={recipes} recipesHeading={heading} />
-      <Pagination
-      currentPage={pageNumber}
-      totalPages={totalPages}
-      />
+      <Pagination currentPage={pageNumber} totalPages={totalPages} />
     </>
   );
 }

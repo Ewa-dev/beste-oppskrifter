@@ -7,13 +7,17 @@ export default function AboutPage() {
         forskjellige anledninger.
       </p>
       <p>
-        Den er tilegnet for alle som liker å lage mat, spesielt studenter,
+        Den er laget for alle som liker å lage mat, spesielt studenter,
         familier og de som ønsker inspirasjon til enkle og gode måltider.
+      </p>
+      <p>
+        Oppskriftene hentes fra DummyJSON API, som tilbyr oppskriftsdata med
+        informasjon om ingredienser,fremgangsmåte og bilder.
       </p>
 
       <p>
         Nettsiden er laget av en av Gokstad studentene, Ewa, som er selv
-        interresert i sunne oppskrifter.
+        interessert i sunne oppskrifter.
       </p>
     </>
   );

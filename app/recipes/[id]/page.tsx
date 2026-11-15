@@ -1,6 +1,7 @@
 import { type Recipe } from "@/types/types";
 import "./id-recipe.css";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -12,6 +13,10 @@ export default async function RecipePage({ params }: Props) {
   const response = await fetch(`https://dummyjson.com/recipes/${id}`);
 
   if (!response.ok) {
+    if (response.status === 404) {
+      notFound();
+    }
+
     throw new Error("Noe gikk galt!");
   }
 
