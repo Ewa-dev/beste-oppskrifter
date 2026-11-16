@@ -12,7 +12,7 @@ export default function AboutPage() {
       </p>
       <p>
         Oppskriftene hentes fra DummyJSON API, som tilbyr oppskriftsdata med
-        informasjon om ingredienser,fremgangsmåte og bilder.
+        informasjon om ingredienser, fremgangsmåte og bilder.
       </p>
 
       <p>
