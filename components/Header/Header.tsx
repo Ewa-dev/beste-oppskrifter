@@ -7,15 +7,18 @@ import SearchForm from "../SearchForm/SearchForm";
 export default function Header() {
   return (
     <header className="top-header">
-      <nav>
+      <div className="logo-container">
         <Link href="/">
           <Image src={logo} className="logo" alt="logo" />
         </Link>
+      </div>
 
+      <nav>
         <Link href="/">Home</Link>
         <Link href="/recipes">Oppskrifter</Link>
         <Link href="/about">Om oss</Link>
       </nav>
+
       <SearchForm />
     </header>
   );

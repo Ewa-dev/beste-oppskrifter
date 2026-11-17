@@ -5,6 +5,7 @@
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -12,8 +13,20 @@
     display: flex;
     text-align: center;
     align-items: center;
-    gap: 0.5rem;
     margin: 0;
     padding: 1rem 2.5rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-footer {
+    padding: 0.5rem;
+  }
+
+  .bottom-footer a {
+    padding: 0.5rem;
+    font-size: 13px;
+    white-space: normal;
   }
 }

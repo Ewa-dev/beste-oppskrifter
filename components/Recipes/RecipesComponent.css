@@ -7,3 +7,11 @@
 .grey {
   color: grey;
 }
+
+@media (max-width: 480px) {
+  .recipes {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+

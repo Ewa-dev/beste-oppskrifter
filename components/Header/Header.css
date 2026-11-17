@@ -2,11 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  gap: 20px;
+}
 
   nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
 
     a {
       text-decoration: none;
@@ -18,13 +22,40 @@
       margin: 0;
       padding: 1rem 2.5rem;
     }
-  }
-}
 
 .logo {
   display: block;
   height: auto;
   width: 80px;
-  align-items: center;
-  gap: 0.5rem;
 }
+
+@media (max-width: 480px) {
+  .top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .top-header nav {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .top- header nav a {
+    padding: 10px 2px;
+    font-size: 13px;
+  }
+}
+

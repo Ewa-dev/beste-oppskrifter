@@ -1,38 +1,59 @@
 .pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 1rem;
+  flex-wrap: wrap;
 
-    a {
-        padding: 0.5rem 1rem;
-        background-color: antiquewhite;
-        text-decoration: none;
-        border-radius: 8px;
-    }
+  a {
+    padding: 0.5rem 1rem;
+    background-color: antiquewhite;
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  a:hover {
+    color: white;
+    background-color: #e67e22;
+  }
 }
 
 .pageNumbers {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 
-    a.active {
-        background-color: orange;
-        color: white;
-        font-weight: bold;
-    }
-}
-
-@media (max-width: 768px) {
-    .recipes {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  a.active {
+    background-color: #e67e22;
+    color: white;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 480px) {
-    .recipes {
-        grid-template-columns: 1fr;
+    .pagination {
+        gap: 0.4rem;
+        margin-block: 1rem;
+        width: 100%;
+        gap: 5px;
     }
+
+    .pagination a {
+        padding: 0.4rem 0.65rem;
+        font-size: 14px;
+    }
+
+    .pageNumbers {
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+
+     .prevButton,
+  .nextButton {
+    flex-shrink: 0;
+  }
 }

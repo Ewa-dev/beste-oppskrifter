@@ -1,4 +1,3 @@
-import "./recipes.css";
 import RecipesComponent from "@/components/Recipes/RecipesComponent";
 import { ReactNode } from "react";
 import Pagination from "@/components/Pagination/Pagination";

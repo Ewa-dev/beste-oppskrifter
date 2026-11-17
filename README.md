@@ -42,7 +42,7 @@ http://localhost:3000
 1. Oppskriftene hentes fra DummyJSON API og kan derfor ikke redigeres av brukeren.
 2. Innholdet er avhengig av at det eksterne API-et er tilgjengelig.
 3. Utvalget av oppskrifter er begrenset til dataene som tilbys av API-et.
-4. Endres det DummyJSON Api for et annet API med flere oppskrifter, må det endres paginering for å ikke vise hver tall (det kan ta for mye plass og se ikke fint ut).
+4. Endres det DummyJSON Api for et annet API med flere oppskrifter, må det endres paginering for å ikke vise hver tall (det kan ta for mye plass og se ikke fint ut, spesielt på midre enheter).
 
 # Teknologier
 

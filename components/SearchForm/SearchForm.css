@@ -1,5 +1,5 @@
 .SearchForm {
-  --border-radius: 8px;
+  --border-radius: 0.5rem;
   display: flex;
   width: fit-content;
   border-radius: var(--border-radius);
@@ -25,5 +25,18 @@
     padding: 12px 30px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .SearchForm {
+    width: 100%;
+    max-width: 350px;
+  }
+  .SearchForm input[type="search"] {
+    flex: 1;
+    width: 0;
+    padding: 12px;
+    font-size: 16px;
   }
 }

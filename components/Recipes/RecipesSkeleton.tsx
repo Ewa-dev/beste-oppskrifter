@@ -11,7 +11,6 @@ export default function RecipesSkeleton() {
           <div className="skeleton-article" key={index}>
             <div className="skeleton skeleton-image" />
             <div className="skeleton skeleton-name" />
-
             <div className="skeleton skeleton-link" />
           </div>
         ))}
