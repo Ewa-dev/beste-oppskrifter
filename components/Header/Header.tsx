@@ -14,7 +14,7 @@ export default function Header() {
       </div>
 
       <nav>
-        <Link href="/">Home</Link>
+        <Link href="/">Hjem</Link>
         <Link href="/recipes">Oppskrifter</Link>
         <Link href="/about">Om oss</Link>
       </nav>

@@ -7,7 +7,7 @@ export default function RecipesSkeleton() {
     <div role="status" aria-label="Laster produkter">
       <h1>Laster oppskrifter...</h1>
       <section className="recipes" aria-hidden="true">
-        {Array.from({ length: 9 }, (_, index) => (
+        {Array.from({ length: 12 }, (_, index) => (
           <div className="skeleton-article" key={index}>
             <div className="skeleton skeleton-image" />
             <div className="skeleton skeleton-name" />

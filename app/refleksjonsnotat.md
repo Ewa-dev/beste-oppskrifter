@@ -7,7 +7,7 @@ Beste Oppskrifter er en portal som henter data fra DummyJSON API. Dette var en n
 Designet jeg har valgt bruker lyse farger og gulrotmotiv i bakgrunnen. Målet var å skape et brukervennlig og oversiktlig design som passer til temaet mat og matlaging. 
 
 Nettstedet inneholder flere sider: 
--Hjem- det kan enten velges Home eller logo for å åpne den; den presenterer nesttstedet,
+-Hjem- det kan enten velges Hjem eller logo for å åpne den; den presenterer nesttstedet,
 -Oppskrifter- viser en oversikt over oppskrifter hentet fra et eksternt API, 
 -Detaljside- viser mer informasjon om en valgt oppskrift med ingredienser, bilde og fremgangsmåte,
 -Om oss- gir informasjon om nettstedet og hvem det er laget for.
@@ -17,7 +17,7 @@ I tillegg er det flere funksjoner:
 -Paginering- gjør det mulig å navigere mellom flere sider med oppskrifter,
 -Loading Skeleton- viser en lasteindikator mens oppskriftene hentes fra API-et.
 
-Jeg har laget flere gjenbrukbare komponenter som er samlet i egne mapper. Dette gjør koden med oversiktlig og gjør det enklere å gjenbruke komponentene på flere sider.
+Jeg har laget flere gjenbrukbare komponenter som er samlet i egne mapper. Dette gjør koden mer oversiktlig og gjør det enklere å gjenbruke komponentene på flere sider.
 
 En utfordring jeg møtte underveis var knyttet til pagination. Plutselig dukket det opp flere sidetall enn forventet. Med 12 oppskrifter per side skulle det totalt vøre fem sider. På side 1–4 ble det vist riktig antall sidetall, men da jeg kom til side 5, dukket det plutselig opp 25 sider. Etter å ha undersøkt koden fant jeg ut beregninen med Math.ceil() var feil. Jeg rettet beregningen slik at det totale antallet elementer ble delt på antall elementer per side. Da fungerte pagineringen som forventet. I tillegg opplevde jeg flere små feil underveis som jeg måtte undersøke og rette.
 
